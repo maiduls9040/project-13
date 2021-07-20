@@ -1,0 +1,41 @@
+/***====google font====**/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Poppins' Sans-Serif;
+}
+img{
+  max-width: 100%;
+}
+
+/***=====responsive css <500====***/
+@media screen and (max-width: 367px){
+  .nav_content{
+    display: flex;
+    position: relative;
+  }
+  
+  .nav_logo{
+    width: 70%;
+  }
+  .nav_menu{
+    display: none;
+  }
+   .nav_menu ul{
+     
+   } 
+   .nav_icon{
+     position: absolute;
+     top: 0;
+     right: 0;
+   }
+   .nav_icon img{
+     width: ;
+   }
+}

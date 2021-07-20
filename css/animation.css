@@ -1,0 +1,154 @@
+/***==== up-downe animations css start hear====***/
+.top_bottom{
+  animation: animat 2s ease;
+}
+@keyframes animat{
+  0%{
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.bottom_top{
+  animation: animat1 2s ease;
+}
+@keyframes animat1{
+  0%{
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/****=== up-downe animations css end hear===***/
+
+/**### left_right animations css start hear ###**/
+.left_right{
+  animation: left-r 2s ease;
+}
+@keyframes left-r{
+  0%{
+    opacity: 0;
+    transform: translateX(100px) ;
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(0);
+  }
+} 
+.right_left{
+  animation: right-l 2s ease;
+}
+@keyframes right-l{
+  0%{
+    opacity: 0;
+    transform: translateX(-100px) ;
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(0);
+  }
+} 
+/**####left right animation css end hear####**/
+
+/**__visible item animation css start hear__**/
+.visible_item{
+  animation: visib 1s ease-in;
+}
+@keyframes visib{
+  0%{
+    opacity: 0;
+    transform: scale(0);
+  }
+  100%{
+    opacity: 1;
+    transform: scale(1);
+  }
+} 
+/*___visible item animation css end hear__**/
+
+/**__slide up-down animation css start hear__**/
+.slide_up{
+  animation: slideup 1s ease-in;
+}
+@keyframes slideup{
+  0%{
+    transform: scaleY(0);
+    transform-origin: bottom center;
+  }
+  100%{
+    transform: scaleY(1);
+  }
+} 
+/**__slide up-down animation css end hear__**/
+
+
+.text_animat{
+  animation: text1 3s ease;
+}
+@keyframes text1{
+  0%{
+    opacity: 0;
+    transform: scaleY(0);
+    color: #000;
+  }
+  100%{
+    opacity: 1;
+    transform: scaleY(1);
+    color: #ff0000;
+  }
+}
+
+/* hover efact css hear */
+.nav_menu ul li a{
+  position: relative;
+}
+.nav_menu ul li a:before{
+  content: ' ';
+  position: absolute;
+  left: 0;
+  bottom: 36px;
+  background: #000;
+  width: 100%;
+  height: 3px;
+  border-radius: 2px;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform .6s linear;
+}
+.nav_menu ul li a:hover:before{
+  content: ' ';
+  transform: scaleX(1);
+  transform-origin: left;
+}
+  
+  
+/* #efect_btn{
+  position: relative;
+}
+#efect_btn:before{
+  content: ' ';
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: #000;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform .4s linear;
+ color: #fff;
+}
+#efect_btn:hover:before{
+  content: ' ';
+  transform: scaleX(1);
+  transform-origin: left;
+}
+   */
